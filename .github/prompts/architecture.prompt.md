@@ -1,0 +1,1 @@
+Design a simple HTML, CSS and JavaScript architecture using approved requirements. Update `docs/architecture.md` and `docs/agent-reports/architect-agent-report.md`.

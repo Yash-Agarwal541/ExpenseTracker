@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <h1>Expense Tracker</h1>
+
+    <section class="expense-form-section" aria-labelledby="expense-form-heading">
+      <h2 id="expense-form-heading">Add Expense</h2>
+      <form id="expense-form" novalidate>
+        <div class="form-grid">
+          <label for="expense-title">
+            Title
+            <input id="expense-title" name="title" type="text" required>
+          </label>
+
+          <label for="expense-amount">
+            Amount
+            <input id="expense-amount" name="amount" type="number" min="0.01" step="0.01" required>
+          </label>
+
+          <label for="expense-category">
+            Category
+            <input id="expense-category" name="category" type="text" required>
+          </label>
+
+          <label for="expense-date">
+            Date
+            <input id="expense-date" name="date" type="date" required>
+          </label>
+        </div>
+
+        <p id="form-message" class="form-message" role="alert"></p>
+        <div class="form-actions">
+          <button id="submit-button" type="submit">Add Expense</button>
+          <button id="cancel-edit-button" type="button" hidden>Cancel Edit</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="expense-view-section" aria-labelledby="expense-list-heading">
+      <div class="view-header">
+        <h2 id="expense-list-heading">Expenses</h2>
+        <p class="total" aria-live="polite">Total: <span id="expense-total">0.00</span></p>
+      </div>
+
+      <label class="filter-control" for="category-filter">
+        Filter by category
+        <select id="category-filter">
+          <option value="">All Categories</option>
+        </select>
+      </label>
+
+      <ul id="expense-list" class="expense-list" aria-live="polite"></ul>
+      <p id="storage-message" class="storage-message" role="status"></p>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

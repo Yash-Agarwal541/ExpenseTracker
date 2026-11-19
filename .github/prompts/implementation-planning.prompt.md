@@ -1,0 +1,1 @@
+Prepare an implementation plan from approved design. Update `docs/implementation-plan.md` and `docs/agent-reports/implementation-agent-report.md`.

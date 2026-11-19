@@ -1,0 +1,1 @@
+Analyze Jira EXP-1. Document approved requirements. Update `docs/requirements.md` and `docs/agent-reports/requirements-agent-report.md`. Report findings.

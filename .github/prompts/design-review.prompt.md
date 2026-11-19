@@ -1,0 +1,1 @@
+Review requirements and architecture. Identify gaps and risks. Update `docs/design-review.md` and `docs/agent-reports/design-review-agent-report.md`.
